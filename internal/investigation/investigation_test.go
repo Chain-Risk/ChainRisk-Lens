@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jijo-OO7/chainrisk-lens/internal/analysis"
-	"github.com/jijo-OO7/chainrisk-lens/internal/graph"
-	"github.com/jijo-OO7/chainrisk-lens/internal/sbom"
+	"github.com/Chain-Risk/chainrisk-lens/internal/analysis"
+	"github.com/Chain-Risk/chainrisk-lens/internal/graph"
+	"github.com/Chain-Risk/chainrisk-lens/internal/sbom"
 )
 
 type testEdge struct {
@@ -27,7 +27,7 @@ func TestFromAnalysis(t *testing.T) {
 		t.Fatalf("FromAnalysis() error = %v", err)
 	}
 	want := Evidence{
-		Target:   Component{BOMRef: "target", Name: "target", Version: "1"},
+		Target: Component{BOMRef: "target", Name: "target", Version: "1"},
 		Impacts: []Impact{
 			{BOMRef: "service", Name: "service", Version: "1", Depth: 1, Path: []string{"target", "service"}},
 			{BOMRef: "worker", Name: "worker", Version: "1", Depth: 2, Path: []string{"target", "service", "worker"}},
@@ -267,4 +267,3 @@ func reverseEdges(values []testEdge) []testEdge {
 	}
 	return reversed
 }
-

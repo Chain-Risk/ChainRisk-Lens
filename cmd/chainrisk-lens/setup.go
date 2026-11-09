@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jijo-OO7/chainrisk-lens/internal/agent"
+	"github.com/Chain-Risk/chainrisk-lens/internal/agent"
 )
 
 const (

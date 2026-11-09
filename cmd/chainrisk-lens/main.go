@@ -11,11 +11,11 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/jijo-OO7/chainrisk-lens/internal/agent"
-	"github.com/jijo-OO7/chainrisk-lens/internal/analysis"
-	"github.com/jijo-OO7/chainrisk-lens/internal/graph"
-	"github.com/jijo-OO7/chainrisk-lens/internal/investigation"
-	"github.com/jijo-OO7/chainrisk-lens/internal/sbom"
+	"github.com/Chain-Risk/chainrisk-lens/internal/agent"
+	"github.com/Chain-Risk/chainrisk-lens/internal/analysis"
+	"github.com/Chain-Risk/chainrisk-lens/internal/graph"
+	"github.com/Chain-Risk/chainrisk-lens/internal/investigation"
+	"github.com/Chain-Risk/chainrisk-lens/internal/sbom"
 )
 
 const (
