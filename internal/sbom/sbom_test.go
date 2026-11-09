@@ -3,6 +3,7 @@ package sbom
 import (
 	"os"
 	"reflect"
+	"strings"
 	"testing"
 )
 

@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	dependencygraph "github.com/jijo-OO7/chainrisk-lens/internal/graph"
-	"github.com/jijo-OO7/chainrisk-lens/internal/sbom"
+	dependencygraph "github.com/Chain-Risk/chainrisk-lens/internal/graph"
+	"github.com/Chain-Risk/chainrisk-lens/internal/sbom"
 )
 
 type propagationEdge struct {

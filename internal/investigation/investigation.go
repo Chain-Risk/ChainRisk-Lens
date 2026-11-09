@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/jijo-OO7/chainrisk-lens/internal/analysis"
-	"github.com/jijo-OO7/chainrisk-lens/internal/graph"
+	"github.com/Chain-Risk/chainrisk-lens/internal/analysis"
+	"github.com/Chain-Risk/chainrisk-lens/internal/graph"
 )
 
 // Component is component metadata included in deterministic evidence.
