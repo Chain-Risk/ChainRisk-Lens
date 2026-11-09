@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jijo-OO7/chainrisk-lens/internal/investigation"
+	"github.com/Chain-Risk/chainrisk-lens/internal/investigation"
 )
 
 type fakeModel struct {

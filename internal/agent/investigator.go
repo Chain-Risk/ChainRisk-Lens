@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/jijo-OO7/chainrisk-lens/internal/investigation"
+	"github.com/Chain-Risk/chainrisk-lens/internal/investigation"
 )
 
 // Model generates a response from a prompt. Runtime and provider details belong

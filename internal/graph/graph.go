@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/jijo-OO7/chainrisk-lens/internal/sbom"
+	"github.com/Chain-Risk/chainrisk-lens/internal/sbom"
 )
 
 // Node is a component in the dependency graph.

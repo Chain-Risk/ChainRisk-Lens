@@ -8,7 +8,7 @@ import (
 
 // SBOM contains the component and dependency data extracted from a CycloneDX document.
 type SBOM struct {
-	Components   []Component   `json:"components"`
+	Components   []Component  `json:"components"`
 	Dependencies []Dependency `json:"dependencies"`
 }
 
@@ -28,8 +28,8 @@ type Dependency struct {
 // Parse extracts components and dependency relationships from CycloneDX JSON.
 func Parse(data []byte) (SBOM, error) {
 	var document struct {
-		BOMFormat    string        `json:"bomFormat"`
-		Components   []Component   `json:"components"`
+		BOMFormat    string       `json:"bomFormat"`
+		Components   []Component  `json:"components"`
 		Dependencies []Dependency `json:"dependencies"`
 	}
 	if err := json.Unmarshal(data, &document); err != nil {

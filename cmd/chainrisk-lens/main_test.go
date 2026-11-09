@@ -11,11 +11,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jijo-OO7/chainrisk-lens/internal/agent"
-	"github.com/jijo-OO7/chainrisk-lens/internal/analysis"
-	"github.com/jijo-OO7/chainrisk-lens/internal/graph"
-	"github.com/jijo-OO7/chainrisk-lens/internal/investigation"
-	"github.com/jijo-OO7/chainrisk-lens/internal/sbom"
+	"github.com/Chain-Risk/chainrisk-lens/internal/agent"
+	"github.com/Chain-Risk/chainrisk-lens/internal/analysis"
+	"github.com/Chain-Risk/chainrisk-lens/internal/graph"
+	"github.com/Chain-Risk/chainrisk-lens/internal/investigation"
+	"github.com/Chain-Risk/chainrisk-lens/internal/sbom"
 )
 
 type fakeInvestigator struct {
@@ -650,13 +650,25 @@ func fakeInvestigationResult() investigation.Result {
 func writeSBOM(t *testing.T, document sbom.SBOM) string {
 	t.Helper()
 
-	data, err := json.Marshal(document)
+	fixture := struct {
+		BOMFormat    string            `json:"bomFormat"`
+		Components   []sbom.Component  `json:"components"`
+		Dependencies []sbom.Dependency `json:"dependencies"`
+	}{
+		BOMFormat:    "CycloneDX",
+		Components:   document.Components,
+		Dependencies: document.Dependencies,
+	}
+
+	data, err := json.Marshal(fixture)
 	if err != nil {
 		t.Fatal(err)
 	}
+
 	path := filepath.Join(t.TempDir(), "sbom.json")
 	if err := os.WriteFile(path, data, 0o600); err != nil {
 		t.Fatal(err)
 	}
+
 	return path
 }

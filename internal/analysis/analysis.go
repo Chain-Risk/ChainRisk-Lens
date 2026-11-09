@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sort"
 
-	dependencygraph "github.com/jijo-OO7/chainrisk-lens/internal/graph"
+	dependencygraph "github.com/Chain-Risk/chainrisk-lens/internal/graph"
 )
 
 // ErrTargetNotFound indicates that the requested target is not in the graph.

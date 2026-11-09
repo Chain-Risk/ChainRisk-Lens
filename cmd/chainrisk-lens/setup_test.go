@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jijo-OO7/chainrisk-lens/internal/agent"
-	"github.com/jijo-OO7/chainrisk-lens/internal/investigation"
-	"github.com/jijo-OO7/chainrisk-lens/internal/sbom"
+	"github.com/Chain-Risk/chainrisk-lens/internal/agent"
+	"github.com/Chain-Risk/chainrisk-lens/internal/investigation"
+	"github.com/Chain-Risk/chainrisk-lens/internal/sbom"
 )
 
 func TestDetectSetupStatusPlatformAndWSL(t *testing.T) {

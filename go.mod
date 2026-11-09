@@ -1,3 +1,3 @@
-module github.com/jijo-OO7/chainrisk-lens
+module github.com/Chain-Risk/chainrisk-lens
 
 go 1.25.0
